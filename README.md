@@ -1,4 +1,4 @@
-<h1>My complete Web Dev cohort Learning from 100xDevs. Thank you, HArkirat Singh</h1>
+<h1>My complete Web Dev cohort Learning from 100xDevs. Thank you, Harkirat Singh Sir 🐐</h1>
 <h2>Pushing these late</h2>
 <h2>Learnt all basics of JS back in 3rd sem and bought this course during my 2nd year internship @ZingHR.</h2>
 <h2>Have pushed these for my learnings and can use them in near future as well.</h2>
