@@ -1,0 +1,25 @@
+This asyncJS directory, also has oops
+In Synchronous JS we have like code that gets executed line by line in the order at which it is written.
+But in Asynchronous we have tasks or code that can be executed based on choice.
+
+classic example:- Boil water, laundry, buy paneer from shop.
+In Synchronous point of view:-
+    - First boil water, once done completely exit that task.
+    - Next do laundry like ironing and all. Once done exit that as well.
+    - Then last buy paneer from shop, once done u come back home.
+U see above right all tasks u do one by one in that order and it takes a lot of time. like an hour.
+
+In Asynchronous point of view:-
+    - You start boiling water and let it boil.
+    - You move onto next task and do ironing and keep track of the water to boil. If done before ironing switch gas
+      off. Else, when done after ironing then switch gas off. So 2 tasks done concurrently.
+    - Then you buy paneer.
+Takes lesser time right and more efficient.
+
+async.js file explains about how it works with files
+
+
+
+
+
+
