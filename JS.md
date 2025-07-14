@@ -8,6 +8,8 @@ These processes could be huge or very small.
 
 Case 1:-
 eg:- 
+<pre>
+<code>
 function compute(n){
     var ans=0;
     for(var i=0;i<=n;i++){
@@ -17,13 +19,19 @@ function compute(n){
 }
 const res=compute(10);
 console.log(res);
+</code>
+</pre>
 
 above snippet runs fast since process is small so it returns sum of 10 with ease.
 
 Case 2:- 
 but same code if it is:- 
+<pre>
+<code>
 const res=compute(10000000000000000);
 console.log(res);
+</code>
+</pre>
 
 CPU fumes(try this snippet on replit, with both cases to differentiate how JS works)
 Why?
