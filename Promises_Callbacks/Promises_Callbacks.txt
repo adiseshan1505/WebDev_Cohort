@@ -1,0 +1,12 @@
+So this is a very important concept.
+To use inbuilt promises is easy but hard to create them on your own.
+
+Some basic callbacks:- 
+setTimeout and setInterval
+
+- setTimeout basically executes a snippet or a piece of code after certain time in ms.
+- setInterval whereas repeats the same thing for certain time interval in ms.
+
+callbackFunction
+- so basically a function is higher ordered and is called again and creates a wrapper for setTimeout
+- refer (callbackFuncs.js)
