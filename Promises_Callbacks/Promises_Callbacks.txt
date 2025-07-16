@@ -10,3 +10,11 @@ setTimeout and setInterval
 callbackFunction
 - so basically a function is higher ordered and is called again and creates a wrapper for setTimeout
 - refer (callbackFuncs.js)
+
+Promises:-
+So promise is a class gives you a promise that I will return you something in the future.
+in promises, especially the ones that u create, you create a func that returns a promise, then u create a 
+callback func, so you actually call the func that returns a promise then the callback
+like:- func().then(callback)
+
+Promises are syntactically a superior way of writing callbacks
