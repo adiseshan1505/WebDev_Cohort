@@ -1,6 +1,23 @@
 //  Here we will understand how to create a higher order function using callbacks
 // A higher order function is that function that takes another function in the same code as it's parameter
 
+//Case1:- (this will not work) recursion for this is imp
+function greet(resolve){
+    setTimeout(greet,resolve,3000);
+}
+function m(){
+    console.log("infinite-recursion happens");
+}
+greet(m);
+
+//what happens above is that setTimeout will execute after 3secs but problem is that greet is getting called
+//inside setTimeout which is called inside greet function. This will lead to infinite-recirsion and the code 
+//never stops. Imagine it like a case of while(True)
+
+//Hence, setTimeout or setInterval must be called outside the func if u  want to call the function inside it.
+
+// Case2:- (this works well and follow this)
+
 function describe(resolve){
     setTimeout(resolve,3000);
 }
