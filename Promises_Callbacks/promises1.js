@@ -1,13 +1,13 @@
-// function wait(resolve){
-//     setTimeout(resolve,3000);
-// }
-// function setTimeoutPromisified(){
-//     return new Promise();
-// }
-// function main(){
-//     console.log("main is called");
-// }
-// setTimeoutPromisified().then(main)
+function wait(resolve){
+    setTimeout(resolve,3000);
+}
+function setTimeoutPromisified(){
+    return new Promise();
+}
+function main(){
+    console.log("main is called");
+}
+setTimeoutPromisified().then(main)
 
 //the above code snippet throws an error
 // Now, return new Promise(); it returns an instnace of the promise class.
@@ -23,3 +23,5 @@ function main(){
     console.log("main is called");
 }
 setTimeoutPromisified().then(main)
+
+// This code returns that main has been called.
