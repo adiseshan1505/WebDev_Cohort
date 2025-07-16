@@ -19,6 +19,7 @@ greet(m);
 // Case2:- (this works well and follow this)
 
 function describe(resolve){
+    console.log(resolve);
     setTimeout(resolve,3000);
 }
 function main(){
