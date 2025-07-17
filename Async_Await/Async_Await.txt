@@ -1,0 +1,24 @@
+Async and Await in JS allows you to write asynchronous code in a sync way but it is more easier to read, maintain
+and write more logical and robust code.
+
+Builds on top of Promises.
+Read Promises this is final part before delving into DOMs and Express.js 
+So when you use async and await you avoid using, .then(); and .catch(); when you call the function to execute it.
+
+Behind the scenes how they work:- 
+Async:- 
+* When u use async you tell Node.js (JS), that this function will always return a promise (instance of promise class).
+* Parameters within return new Promise(); depends upon the usecase you are targetting.
+* Await can be  used inside this.
+
+Await:- 
+* Can be used only inside async function.
+* Pauses execution of async function when focuses on the function it has been called.
+* waits for the promise class to be resolved.
+* then further continues.
+* If promise class is rejected it throws an error.
+
+ 
+syntax algo:-
+* function promisified and return it with an executor function;
+* now use async functions that run asynchronously and 
