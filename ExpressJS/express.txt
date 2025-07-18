@@ -31,7 +31,7 @@ DELETE - Remove a resource from the server. (Delete my todo)
 Responses:-
 So for a given request you get a response
 could be text, html or .json files
-.json= JSOPN is JavaScript Object Notation.
+.json= JSON is JavaScript Object Notation.
 eg:-
 we can call this as a .json schema
 {
