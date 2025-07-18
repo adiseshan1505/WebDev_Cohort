@@ -1,0 +1,67 @@
+HTTP:-
+Hyper Text Transfer Protocol
+We have the concept of a client-server model
+So client sends message or data or we call packet(single small structured unit of data) to server.
+A protocol(set of rules for execution) is running on both sides. So there are communication links that are established
+between client and server for efficient communication and transmission
+
+Domain Name and IP
+google.com, x.com, app.100xdevs.com these are all domain names
+
+In your cmd try ping google.com you get it's IP.
+PING google.com (142.251.221.174) 56(84) bytes of data.
+64 bytes from pnmaaa-au-in-f14.1e100.net (142.251.221.174): icmp_seq=1 ttl=110 time=79.4 ms
+64 bytes from pnmaaa-au-in-f14.1e100.net (142.251.221.174): icmp_seq=2 ttl=110 time=70.1 ms
+64 bytes from pnmaaa-au-in-f14.1e100.net (142.251.221.174): icmp_seq=3 ttl=110 time=48.4 ms
+64 bytes from pnmaaa-au-in-f14.1e100.net (142.251.221.174): icmp_seq=4 ttl=110 time=89.4 ms
+142.251.221.174 is the IP of google.
+
+Ports in Networking and Servers
+So these are logical endpoints used by protocol to identify a process.
+They act as channels or queues for specific types of network communication.
+
+HTTP Methods (Endpoints)
+Common methods
+These are all requests that are made by client
+GET -  Retrieve data from a server. (Get my TODOS)
+POST - Submit data to be processed by a server. (Create a TODO)
+PUT - Update or create a resource on the server (Update my todo)
+DELETE - Remove a resource from the server. (Delete my todo)
+
+Responses:-
+So for a given request you get a response
+could be text, html or .json files
+.json= JSOPN is JavaScript Object Notation.
+eg:-
+we can call this as a .json schema
+{
+  "name": "John Doe",
+  "age": 30,
+  "isEmployed": true,
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown"
+  },
+  "phoneNumbers": ["123-456-7890", "987-654-3210"]
+}
+
+
+Different Status Codes:- 
+200 series(Success):- 
+    - 200 OK:- request was succesful and server gave a response succesfully.
+    - 200 No Content:- Request was successful but server did not return any response
+
+300 Series (Redirection):-
+    - 301 Moved Permanently:- Requested resource has been moved to a new URL permanently. Client must use new URL
+                              to get the response.
+    - 304 Not Modified:-  Resource has not been modified since the last request. Client can use the cached version.
+
+400 Series (Client Error):- 
+    - 400 Bad request:- Server has not understood anything.
+    - 401 unauthorized:- authentication error, invalid auth key or whatever.
+    - 403 forbidden:- server understands request but does not authorize it.
+    - 404 Not Found:- requested resource could not be found in the server.
+
+500 Series (Server Error):- 
+    - 500:- internal server error
+    - 502:- bad gateway(received invalid response)
