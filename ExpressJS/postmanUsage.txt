@@ -1,0 +1,8 @@
+A software used to test all your api endpoints by giving various http request
+https://www.youtube.com/watch?v=VywxIQ2ZXw4&t=72s  , watch this vid to understand how HTTP and postman works
+so in the file basicExpress_code.txt run it using node index.js.
+The port in which it runs will have a domain name of localhost.
+All localhost are http 
+so http://localhost:3000
+give a get request to it paste the link and click on send 
+In the body the message will be printed
