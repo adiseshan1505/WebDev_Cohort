@@ -1,5 +1,6 @@
-HTTP:-
+HTTP:- (your localhost is always an http)
 Hyper Text Transfer Protocol
+if secure through encryption then https:- same thing followed by secure
 We have the concept of a client-server model
 So client sends message or data or we call packet(single small structured unit of data) to server.
 A protocol(set of rules for execution) is running on both sides. So there are communication links that are established
@@ -65,3 +66,20 @@ Different Status Codes:-
 500 Series (Server Error):- 
     - 500:- internal server error
     - 502:- bad gateway(received invalid response)
+
+
+In an HTTP communication body (or payload) refers to part of an HTTP message that contains the actual data that is
+being sent to the server.
+data is sent as a .json normally.
+
+Routes:- they are paths or endpoints(API endpoint) that define how incoming requests are or to be handled by the
+server.
+
+Headers:- Body has main data and that data's authorization will be in the headers.
+
+
+To create a basic Express app:- 
+in your directory:- mkdir expressApp && cd expressApp 
+then npm init -y (installs a package.json file that has name of your app and all)
+then install express:- npm install express 
+then code.
