@@ -1,0 +1,18 @@
+Mainly whenever u go to any website u r sending HTTP requests to that specific website's server.
+On a single machine(MacOS/ Windows) u can run many HTTP servers on diff ports.
+You can have multiple processes running at the same time.
+A single machine can run many multiple servers, one handline load on one port and so on...
+
+Note:- on one port more than one process can never take place.
+
+Headers:- 
+there are headers sent to an HTTP server.
+say:- updating a tweet, so u send a put request na to api.twitter.com/tweet where in the body u have the description
+and all.
+So headers are extra meta-data that u send
+So when u send an HTTP request u also send a request header, that does the following:-
+They tell server how to interpret the body, provide authentication info, managing caching, cookies
+,lang preferences, content-type (JSON ya XML)
+define content format and more...
+Body is ur actual content, like updated description, media of the tweet.
+Response header is the o/p of ur request that is reflected in the body.
