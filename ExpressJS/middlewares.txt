@@ -1,0 +1,4 @@
+So middlewares is used in ur code to make ur API endpoints more better.
+So there is something called as request response cycle.
+You go to the URL and it sends a request to it the code logic for the request is then processed and then response is
+generated. This is a request response cycle.
