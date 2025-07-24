@@ -1,0 +1,9 @@
+So, there are 2 high level ways:-
+from the browser:- it is more of a default get request
+so u send an http get request and server responds to it.
+so the request u send is used to retrieve resources like HTML pages, images or other content.
+
+from an HTML form or JS:- 
+in the form of HTML forms the form attribute:- so when u run ur HTML webpage browser sends an HTTP request based on
+the form's method attribute, which can be a GET or POST.eg:- method="POST"
+JS FetchAPI function:- so a JS running browser make requests to a server using APIs the fetch API.

@@ -5,54 +5,56 @@
 
 //or we can write dynamic query params
 //http://localhost:3000/operation/firstArg/secondArg  ----> way better
-//whe u dynamically do this then u use req.params.arg1 and so on....
+//when u dynamically do this then u use req.params.arg1 and so on....
+// so query params are normally always dynamic 
+//Note one imp thing:- Each route handler or ur API endpoint can have only one response per request.
 
-const express=require('express');
-const app=express();
+const express= require('express');
+const app= express()
 
-app.get('/sum/:firstArg/:secondArg', function (req,res){
-    const a= parseInt(req.params.firstArg);
-    const b= parseInt(req.params.secondArg);
+app.get('/', function (req,res){
     res.json({
-        answer:a+b
-    })
+        answer: "Welcome to the simple Math API"
+    });
 });
 
-
-app.get('/multiply/:firstArg/:secondArg', function(req,res){
+app.get('/sum/:firstArg/:secondArg', function(req,res){
     const a= parseInt(req.params.firstArg);
-    const b= parseInt(req.params.secondArg);
+    const b=parseInt(req.params.secondArg);
     res.json({
-        answer:a*b
-    })
+        answer: a+b
+    });
 });
-
 
 app.get('/subtract/:firstArg/:secondArg', function(req,res){
-    const a= parseInt(req.params.firstArg);
-    const b= parseInt(req.params.secondArg);
+    const a=req.params.firstArg;
+    const b=req.params.secondArg;
     res.json({
-        answer:a-b
-    }) 
+        answer: a-b
+    });
 });
 
+app.get('/multiply/:firstArg/:secondArg', function(req,res){
+    const a=req.params.firstArg;
+    const b= req.params.secondArg;
+    res.json({
+        answer: a*b
+    });
+});
 
 app.get('/divide/:firstArg/:secondArg', function(req,res){
-    const a= parseInt(req.params.firstArg);
-    const b= parseInt(req.params.secondArg);
+    const a=req.params.firstArg;
+    const b=req.params.firstArg;
     if(b==0){
         res.json({
-            alert: "can't divide by zero."
-        })
+            alert: "Can't divide by zero"
+        });
     }
-    else{
-        res.json({
-            answer: a/b
-        })
-    }
-});
+    res.json({
+        answer:a/b
+    });
+})
 
-
-app.listen(3000,()=>{
-    console.log("Math app running on the port 3000....");
+app.listen(3000, ()=>{
+    console.log("Math-API runs on sevrer 3000.....");
 });
