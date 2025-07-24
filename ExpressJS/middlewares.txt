@@ -2,3 +2,56 @@ So middlewares is used in ur code to make ur API endpoints more better.
 So there is something called as request response cycle.
 You go to the URL and it sends a request to it the code logic for the request is then processed and then response is
 generated. This is a request response cycle.
+So in short middlewares are code or functions that have access to the req, res and next objects in ur code and they 
+can be called in  ur API endpoint as well.
+So middlewares are used to change the request or response object.
+If u want you can stop the request itself say like:- 
+function middleware(req,res,next){
+    req.name="Cohort"
+}
+//route handler
+app.get('/', function(){
+    -------
+});
+
+so u can stop the request before it reaches the route handler, like for authentication of an organization.
+If I want to enter employees.google.com it will block me as not authenticated, and the request is not passed on to 
+the route handler.
+
+to transfer request to the next function:
+
+app.use(function(req,res,next){
+    console.log("request recieved");
+    //transfers request to the next function in chain
+    next();
+})
+
+app.get('/',function(){
+    --------
+});
+
+to modify the request:
+
+app.use(function(req,res,next){
+    req.name="cohort"
+    //transfers the modified request to the next function in chain
+    next();
+})
+
+app.get('/',function(){
+    console.log(req.name);
+    --------
+});
+
+to end the request/response cycle like the employees.google.com thingy, so it is a very common pattern to handle 
+authenticaiton.
+
+app.use(function(req,res,next){
+    res.json({
+        alert: "message not allowed"
+    })
+})
+
+
+Now after this there is something called as route specific middleware which means there are certain middleware code
+or functions that are applied only to a specific routes or api endpoints.
