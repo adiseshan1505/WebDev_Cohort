@@ -42,7 +42,7 @@ Why?
 So, to do any process Node.js will access only one single core of the CPU to execute the process regardless how huge,
 the process is.
 So in Case2:- it will take a lot of time to run as good as not running unlike Case1.
-Since it accesses only one single core of your system and hence, Node.js is single threaded.</p>
+Since it accesses only one single core of your system, Node.js is single threaded.</p>
 <br>
 <p>So, JS has originally been designed to run in browsers(through Node.js the runtime of JS), which has a 
 single-threaded event loop to handle UI updates, user events without race conditions.
