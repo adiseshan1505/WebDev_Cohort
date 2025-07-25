@@ -38,7 +38,7 @@ CPU fumes(try this snippet on replit, with both cases to differentiate how JS wo
 <br>
 Why?
 <br>
-<p>Node.js (JS runtime is Simgle-Threaded).
+<p>Node.js (JS runtime is Single-Threaded).
 So, to do any process Node.js will access only one single core of the CPU to execute the process regardless how huge,
 the process is.
 So in Case2:- it will take a lot of time to run as good as not running unlike Case1.
