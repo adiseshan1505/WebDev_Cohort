@@ -6,6 +6,9 @@ console.log(data1);
 const data2=fs.readFileSync('./b.txt','utf-8');
 console.log(data2);
 
+//what is utf-8???
+//UTF is Unicode Transformation 8 bit and 8bit is 1 byte. So when u tell Node.js that I am using utf-8 it actually 
+//decodes it into a human-readable text string.
 
 // above code does not run since data1 is asynchronous it needs a callback
 // so we can create a callback or a callback func for data1, look below
