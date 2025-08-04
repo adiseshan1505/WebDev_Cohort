@@ -24,6 +24,9 @@ When ur food/order is read the number is flashedalong with a buzzer that is rung
 So the buzzer and the screen with ur order no. flashed indicates a callback to u that ur order is ready, 
 go collect ur food.
 
+So in the boil iron and buy example, my brain gives me a callback that2 processes, boiling and ironing got over 
+concurrently, and I need to move on to purchase paneer.
+
 async.js file explains about how it works with files
 
 
