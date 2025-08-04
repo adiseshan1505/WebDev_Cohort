@@ -16,6 +16,14 @@ In Asynchronous point of view:-
     - Then you buy paneer.
 Takes lesser time right and more efficient.
 
+In general any long process takes place asynschronously. When performed asynschronously the process always needs 
+smthg called as a "Callback".
+Say in Food Malls you have Dominos where they have a screen with order no.s getting flashed.
+Say u ordered a Paneer makhani pizza and a Marghareita and order no. is 104.
+When ur food/order is read the number is flashedalong with a buzzer that is rung.
+So the buzzer and the screen with ur order no. flashed indicates a callback to u that ur order is ready, 
+go collect ur food.
+
 async.js file explains about how it works with files
 
 
